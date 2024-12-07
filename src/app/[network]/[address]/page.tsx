@@ -1,8 +1,8 @@
 import type { Metadata, NextPage } from "next";
 import { Card } from "../../../components/ui/card";
 import TokenInfo from "../../components/token-info-view";
-import { getTokenData } from "@/app/page";
 import getFormattedCurrency from "@/utils/get-formatted-currency";
+import { getTokenData } from "@/app/fetchers/get-token-data";
 
 type Props = {
   params: Promise<{ network: string; address: string }>
